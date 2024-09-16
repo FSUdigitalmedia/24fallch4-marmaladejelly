@@ -22,13 +22,9 @@ function draw() {
   // output range
   // easing type
   // start, end, both
-  let easedY = map2(y, 0, height, 0, height, SINUSOIDAL, BOTH)
-  let easedX = map2(x, 0, width, 0, width, SINUSOIDAL, BOTH)
   
-  fill(0,150,255);
-  circle(width-width/4, easedY, 40);
   let angle = map2(y, 0, height, 0, TWO_PI, QUADRATIC, BOTH);
-  let dia = map2(y, 0, height, 50, 150, SINUSOIDAL, BOTH);
+  let dia = map2(y, 0, height, 50, 50, SINUSOIDAL, BOTH);
 
 
   /*// Enable orbiting with the mouse.
@@ -50,6 +46,8 @@ function draw() {
   pop();
 
 /*
+  if (circle1X > circle2X - circle2Width && circle1X < circle2X + circle2Width && circle1Y > circle2Y - circle2Height && circle1Y < circle2Y + circle2Height)
+
   // Rotate square system 1/8 turn.
   translate(width/2, height/2);
   rotate(45)
