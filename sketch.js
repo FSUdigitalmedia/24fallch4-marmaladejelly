@@ -12,6 +12,7 @@ function setup() {
 function draw() {
   background(50);
 
+  // linear
   fill(255,150,0)
   noStroke();
   circle(width/2, y, 40);
@@ -44,9 +45,16 @@ function draw() {
   rotate(angle);
   rectMode(CENTER);
   fill(255);
-  
+  rotate(45)
+  square(0, 0, dia);
   pop();
 
+/*
+  // Rotate square system 1/8 turn.
+  translate(width/2, height/2);
+  rotate(45)
+  square(0, 0, dia);
+*/
 
   y += speed;
   if (y < 25 || y > height-25) {
