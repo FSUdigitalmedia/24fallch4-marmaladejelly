@@ -1,8 +1,8 @@
 let speed = 3;
 let y;
 let x;
-let rectX = ２；
-let rectY = 50；
+let rectX = 200;
+let rectY = 500;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -28,12 +28,12 @@ function draw() {
   let dia = map2(y, 0, height, 50, 50, SINUSOIDAL, BOTH);
 
   push();
-  translate(wi1 ```````11dth/2, height/2);
+  translate(width/2, height/2);
   rotate(angle);
   rectMode(CENTER);
   fill(255);
   rotate(45);
-  square(rectX, rectY, 400, 20);
+  square(rectX, rectY, 500, 600);
   pop();
     
   y += speed;
@@ -50,4 +50,4 @@ function draw() {
       velocityY= -5
   }
 
-}
+  }
